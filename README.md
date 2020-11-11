@@ -9,3 +9,5 @@
 * add ability to delete article
 * add link for all pages
 * DRY code -refactoring
+* applied bootstrap
+* add layout links
