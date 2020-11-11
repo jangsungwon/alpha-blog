@@ -3,6 +3,7 @@
 * generate controller pages
 * make home,about pages
 * make migration creation_articles and timestamps
-* db validation and articles page
-* create new articles
-* update articles
+* add db validation and articles page
+* add ability to create new article
+* add ability to update article
+* add ability to delete article
