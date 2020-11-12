@@ -19,3 +19,4 @@
 * cleanup layout
 * add user page
 * add paginations
+* add log in/logout
