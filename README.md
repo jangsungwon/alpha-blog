@@ -16,3 +16,4 @@
 * style articles edit page
 * style messages/errors
 * style articles view page
+* cleanup layout
