@@ -1,7 +1,21 @@
 <h1 class="text-center mt-4 text-secondary">Listing all articles</h1>
 
+<div class="apple_pagination">
+  <div class="page_info">
+    <%= page_entries_info @articles %>
+  </div>
+  <%= will_paginate @articles, :container => false %>
+</div>
+
 <%= render 'article' %>
 
-<div class="mb-3">
+<div class="mb-4">
   <%= link_to "Create new article", new_article_path, class: "text-light row justify-content-md-center" %>
+</div>
+
+<div class="apple_pagination mb-4">
+  <div class="page_info">
+    <%= page_entries_info @articles %>
+  </div>
+  <%= will_paginate @articles, :container => false %>
 </div>
