@@ -13,8 +13,10 @@
             <div class="card-text"><%= simple_format(truncate(article.description, length: 100)) %></div>
             <!--<a href="#" class="btn btn-secondary">View</a>-->
             <%= link_to "View", article_path(article), class: "btn btn-secondary" %>
-            <%= link_to "Edit", edit_article_path(article), class: "btn btn-secondary" %>
-            <%= link_to "Delete", article_path(article), method: :delete, class: "btn btn-warning" %>
+            <% if logged_in? && article.user == current_user %>
+              <%= link_to "Edit", edit_article_path(article), class: "btn btn-secondary" %>
+              <%= link_to "Delete", article_path(article), method: :delete, class: "btn btn-warning" %>
+            <% end %>
           </div>
           <div class="card-footer text-muted">
             <small>Created <%= time_ago_in_words(article.created_at) %> ago,
