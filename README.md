@@ -4,4 +4,4 @@
 * 카테고리 기능 구현
 * 로그인(세션) 기능 구현
 * 관리자 기능 구현
-http://sw-alpha-blog-6.herokuapp.com/articles
+* https://sw-alpha-blog-6.herokuapp.com/
